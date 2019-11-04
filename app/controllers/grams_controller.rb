@@ -3,7 +3,7 @@ class GramsController < ApplicationController
   end
 
   def new
-    @gram = Gram.new{"Hello!"}
+    @gram = Gram.new
   end
 
   def create
