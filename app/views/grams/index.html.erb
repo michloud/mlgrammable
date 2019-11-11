@@ -6,3 +6,10 @@
   <%= image_tag gram.picture.to_s, class: 'img-fluid' %>
 </div>
 <% end %>
+
+
+<h2>Add a comment</h2>
+<%= simple_form_for @comment do |f| %>
+  <%= f.input :message %>
+  <%= f.submit "Post" %>
+<% end %>

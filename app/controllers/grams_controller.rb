@@ -21,7 +21,7 @@ class GramsController < ApplicationController
 
   def show
     @gram = Gram.find_by_id(params[:id])
-    return render_not_found if @gram.blank? 
+    return render_not_found if @gram.blank?
   end
 
   def edit
