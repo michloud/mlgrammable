@@ -20,12 +20,12 @@ RSpec.describe CommentsController, type: :controller do
       end
 
       it "should return http status code not found if the gram is not found" do
-        user =FactoryBot.create(:user)
+        user = FactoryBot.create(:user)
         sign_in user
         post :create, params: { gram_id: 'YOLOSWAG', comment: { message: 'awesome gram'}}
         expect(response).to have_http_status :not_found
       end
-    end
+  end
 
 
 end
